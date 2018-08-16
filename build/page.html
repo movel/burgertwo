@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Index page</title>
+    <title>Burgers page</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, max-scale=1">
     <meta name="theme-color" content="#fff">
@@ -13,16 +13,22 @@
   <body>
     <!-- BEGIN content -->
     <div class="out">
-      <div class="container"> <input type="checkbox" id="menu"> <label for="menu" onclick></label>
-        <nav role="off-canvas">
+      <div class="container">
+        <nav role="select">
+          <!-- basic menu goes here -->
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Our Burgers</a></li>
-            <li><a href="#">What else?</a></li>
-            <li><a href="#">Photos</a></li>
+            <li><a href="#">Stream</a></li>
+            <li><a href="#">Lab</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
+          </ul> <select onchange="if (this.value) window.location.href = this.value;">
+            <option value="#">Stream</option>
+            <option value="#">Lab</option>
+            <option value="#">Projects</option>
+            <option value="#">About</option>
+            <option value="#">Contact</option>
+        </select> </nav>
         <div class="content">
           <p>Fap cray leggings wes anderson, freegan shoreditch bespoke locavore echo park. Pinterest post-ironic sustainable letterpress, leggings echo park gentrify kale chips VHS cosby sweater flexitarian chillwave aesthetic. Master cleanse small batch
             sustainable, 3 wolf moon butcher readymade locavore quinoa. Hella sartorial mcsweeney's, squid banh mi locavore vice four loko brooklyn next level stumptown. Fap stumptown fingerstache mustache. Forage 3 wolf moon iphone, williamsburg bushwick
